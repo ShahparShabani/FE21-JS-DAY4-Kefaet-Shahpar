@@ -6,19 +6,19 @@
   .wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     height: 200px;
 
     .child {
+      flex: auto;
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
-    }
+      justify-content: flex-end;
+      align-items: center;
 
-    div {
-      flex-basis: 50%;
-      height: 100%;
+      .btn {
+        padding: 0.5rem 1rem;
+      }
     }
 
     #left {
@@ -35,7 +35,11 @@
   }
 
   #winner {
-      background-color: lightgoldenrodyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: lightgoldenrodyellow;
   }
 
   #bottom-img {
