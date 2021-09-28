@@ -1,26 +1,40 @@
 #header-title {
-    text-align: center;
+  text-align: center;
 }
 
 .main-container {
-    .wrapper {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 200px;
+
+    .child {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      height: 200px;
-
-  
-      div {
-        flex-basis: 50%;
-        // padding: 1.5rem;
-        // align-self: center;
-      }
-      #left {
-          background-color: darksalmon;
-      }
-
-      #right {
-        background-color:lightcoral;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
+
+    div {
+      flex-basis: 50%;
+      height: 100%;
+    }
+
+    #left {
+      background-color: darksalmon;
+    }
+
+    #right {
+      background-color: lightcoral;
+    }
+
+    .diceNumber {
+      padding: 2rem;
     }
   }
+
+  #bottom-img {
+    width: 100%;
+  }
+}

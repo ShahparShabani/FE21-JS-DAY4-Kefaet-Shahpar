@@ -1,12 +1,9 @@
-// onDocLoad();
+var leftPerson = prompt("Please enter name of the first player:");
+var rightPerson = prompt("Please enter name of the second player:");
 
 var scores = new Array();
 
-var leftScore = null;
-var rightScore = null;
-
-var leftPerson= null;
-var rightPerson = null;
+onDocLoad();
 
 document.getElementById("btn-left").addEventListener("click", function () {
   leftScore = rollDice();
@@ -22,23 +19,29 @@ document.getElementById("btn-right").addEventListener("click", function () {
   scores.push(rightScore);
   if (scores.length >= 2) {
     findMaxScore();
+    scores = [];
   }
 });
 
 function onDocLoad() {
-
-  leftPerson = prompt("Please enter name of the first player:");
-  rightPerson = prompt("Please enter name of the second player:");
-
-  if (leftPerson != null || leftPerson != "" || rightPerson != null || rightPerson != "" ) {
-    document.getElementById("header-title").innerHTML = `${leftPerson} vs. ${rightPerson}`;
+  if (
+    leftPerson != null ||
+    leftPerson != "" ||
+    rightPerson != null ||
+    rightPerson != ""
+  ) {
+    document.getElementById(
+      "header-title"
+    ).innerHTML = `${leftPerson} vs. ${rightPerson}`;
   } else {
-    document.getElementById("header-title").innerHTML = `There is no enough players.`
+    document.getElementById(
+      "header-title"
+    ).innerHTML = `There is no enough players.`;
   }
 }
 
 function rollDice() {
-  let num = Math.floor(Math.random() * 7);
+  let num = Math.floor(Math.random() * 6) + 1;
   console.log(num);
   return num;
 }
@@ -47,12 +50,12 @@ function findMaxScore() {
   let winner = document.querySelector("#winner");
   if (leftScore > rightScore) {
     winner.innerHTML = `Winner is ${leftPerson}  with ${leftScore}.`;
-    console.log('Winner is left with')
+    console.log("Winner is left with");
   } else if (leftScore < rightScore) {
     winner.innerHTML = `Winner is ${rightPerson} with ${rightScore}.`;
-    console.log('Winner is right with')
+    console.log("Winner is right with");
   } else {
     winner.innerHTML = `Both ${leftPerson} and ${rightPerson} have the scame score ${leftScore}.`;
-    console.log('both')
+    console.log("both");
   }
 }
