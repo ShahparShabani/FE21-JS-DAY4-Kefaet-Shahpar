@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+   
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        // padding: 1rem;
+        background-color: burlywood;
+        overflow: hidden;
+
+        li {
+            float: left;
+
+            a {
+                
+                display: block;
+                text-decoration: none;
+                // padding: 14px 16px;
+                padding: 1rem 0.7rem;
+                color: black;
+            }
+
+            a:hover {
+                background-color: chocolate;
+            }
+
+            .active {
+                background-color:brown;
+            }
+        }
+
+        li:last-of-type {
+            float: right;
+        }
+    }
+ 
+}

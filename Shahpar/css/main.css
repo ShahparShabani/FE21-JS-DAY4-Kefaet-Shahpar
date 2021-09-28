@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: burlywood;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 0.7rem;
+  color: black;
+}
+
+nav ul li a:hover {
+  background-color: chocolate;
+}
+
+nav ul li .active {
+  background-color: brown;
+}
+
+nav ul li:last-of-type {
+  float: right;
+}
+/*# sourceMappingURL=main.css.map */
