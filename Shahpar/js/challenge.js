@@ -25,10 +25,10 @@ document.getElementById("btn-right").addEventListener("click", function () {
 
 function onDocLoad() {
   if (
-    leftPerson != null ||
-    leftPerson != "" ||
-    rightPerson != null ||
-    rightPerson != ""
+    leftPerson != null &&
+    leftPerson != "" &&
+    rightPerson != null &&
+    rightPerson !=""
   ) {
     document.getElementById(
       "header-title"
