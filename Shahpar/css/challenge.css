@@ -47,6 +47,10 @@
   padding: 2rem;
 }
 
+.main-container #winner {
+  background-color: lightgoldenrodyellow;
+}
+
 .main-container #bottom-img {
   width: 100%;
 }

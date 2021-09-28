@@ -49,10 +49,10 @@ function rollDice() {
 function findMaxScore() {
   let winner = document.querySelector("#winner");
   if (leftScore > rightScore) {
-    winner.innerHTML = `Winner is ${leftPerson}  with ${leftScore}.`;
+    winner.innerHTML = `Winner is <b>  ${leftPerson} </b> with ${leftScore}.`;
     console.log("Winner is left with");
   } else if (leftScore < rightScore) {
-    winner.innerHTML = `Winner is ${rightPerson} with ${rightScore}.`;
+    winner.innerHTML = `Winner is <b> ${rightPerson} </b> with ${rightScore}.`;
     console.log("Winner is right with");
   } else {
     winner.innerHTML = `Both ${leftPerson} and ${rightPerson} have the scame score ${leftScore}.`;
