@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,eADa,CACb,QAAQ,CAAC;EACP,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,YAAY;CAU9B;;AAdH,AAMI,eANW,CACb,QAAQ,CAKN,GAAG,CAAC;EACF,UAAU,EAAE,UAAU;CAMvB;;AAbL,AASM,eATS,CACb,QAAQ,CAKN,GAAG,CAGD,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "intermediate-1.scss"
+    ],
+    "names": [],
+    "file": "intermediate-1.css"
+}
