@@ -1,5 +1,19 @@
+@font-face {
+  font-family: "Architects Daughter";
+  src: url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Italianno&family=Josefin+Sans:wght@300&display=swap");
+}
+
+body {
+  font-family: "Architects Daughter", cursive;
+  margin: 0;
+  padding: 0;
+}
+
 #header-title {
   text-align: center;
+  text-shadow: 2px 2px 8px #3a3737;
+  letter-spacing: 0.09em;
+  font-size: 3em;
 }
 
 .main-container {
@@ -18,19 +32,22 @@
 
       .btn {
         padding: 0.5rem 1rem;
+        cursor: pointer;
+        border-radius: 6px;
+        box-shadow: 0px 5px 8px #771313, 0px -5px 8px #771313;
       }
     }
 
     #left {
-      background-color: darksalmon;
+      background-color: #ab3948;
     }
 
     #right {
-      background-color: lightcoral;
+      background-color: #6d4040;
     }
 
     .diceNumber {
-      padding: 2rem;
+      font-size: 2rem;
     }
   }
 
@@ -38,7 +55,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
+    text-shadow: 2px 2px 8px #ff0000;
+    letter-spacing: 0.09em;
+    font-size: 2em;
+    line-height: 2.3em;
     background-color: lightgoldenrodyellow;
   }
 
