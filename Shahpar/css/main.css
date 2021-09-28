@@ -39,4 +39,9 @@ nav ul li .active {
 nav ul li:last-of-type {
   float: right;
 }
+
+.main-container {
+  margin: 2rem;
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */
